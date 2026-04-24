@@ -37,7 +37,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+34 900 123 456</span>
+                <span>2668-3700</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
@@ -45,7 +45,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
-                <span>Centro de Psicología, Madrid</span>
+                <span>Campus Universitario, San Miguel</span>
               </li>
             </ul>
           </div>
@@ -56,21 +56,21 @@ const Footer = () => {
             <div className="flex gap-4">
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://www.instagram.com/univosm/"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://www.facebook.com/UNIVOSM/"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                href="#"
+                href="https://x.com/univosm"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
               >
                 <Twitter className="w-5 h-5" />
