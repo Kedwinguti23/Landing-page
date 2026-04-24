@@ -5,9 +5,12 @@ import Button from './Button'
 
 /**
  * Tarjeta de servicio individual con animación de expansión
+ * Soporta servicios, preespecializaciones, cámara gesell y licenciados
  */
-const ServiceCard = ({ title, description, longDescription, icon: Icon, color }) => {
+const ServiceCard = ({ title, description, longDescription, icon: Icon, color, type = 'service', image, specialty }) => {
   const [isExpanded, setIsExpanded] = useState(false)
+  
+  const isLicensed = type === 'licensed'
 
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -28,14 +31,45 @@ const ServiceCard = ({ title, description, longDescription, icon: Icon, color })
       whileHover="hover"
       className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow"
     >
-      <div className="p-6">
-        {/* Icon */}
-        <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${color} bg-opacity-10 flex items-center justify-center mb-4`}>
-          <Icon className="w-7 h-7 text-white" />
+      {/* Profile Image for Licensed Professionals */}
+      {isLicensed && image && (
+        <div className="w-full h-48 overflow-hidden">
+          <img 
+            src={image} 
+            alt={title}
+            className="w-full h-full object-cover"
+          />
         </div>
+      )}
+      
+      <div className="p-6">
+        {/* Icon for Services */}
+        {!isLicensed && (
+          <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${color} bg-opacity-10 flex items-center justify-center mb-4`}>
+            <Icon className="w-7 h-7 text-white" />
+          </div>
+        )}
+
+        {/* Type Badge */}
+        {type !== 'service' && (
+          <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3 ${
+            type === 'licensed' ? 'bg-amber-100 text-amber-800' :
+            type === 'prespecialization' ? 'bg-blue-100 text-blue-800' :
+            type === 'gesell' ? 'bg-teal-100 text-teal-800' : ''
+          }`}>
+            {type === 'licensed' ? 'Licenciado' :
+             type === 'prespecialization' ? 'Preespecialización' :
+             type === 'gesell' ? 'Cámara Gesell' : ''}
+          </span>
+        )}
 
         {/* Title */}
         <h3 className="text-xl font-bold mb-2">{title}</h3>
+        
+        {/* Specialty for Licensed Professionals */}
+        {isLicensed && specialty && (
+          <p className="text-sm text-primary font-semibold mb-2">{specialty}</p>
+        )}
         
         {/* Short Description */}
         <p className="text-gray-600 mb-4">{description}</p>

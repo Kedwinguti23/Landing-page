@@ -20,7 +20,7 @@ const Button = ({
   const baseStyles = 'rounded-lg font-semibold transition-all duration-200 inline-flex items-center justify-center gap-2'
   
   const variants = {
-    primary: 'bg-gradient-to-r from-primary to-secondary text-white hover:shadow-lg hover:scale-105',
+    primary: 'bg-primary text-white hover:shadow-lg hover:scale-105',
     secondary: 'bg-gray-100 text-gray-800 hover:bg-gray-200',
     outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white'
   }
