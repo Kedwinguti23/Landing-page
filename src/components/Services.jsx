@@ -7,7 +7,10 @@ import {
   Users,
   Baby,
   TrendingUp,
-  Shield
+  Shield,
+  BookOpen,
+  Video,
+  Award
 } from 'lucide-react'
 
 const servicesData = [
@@ -58,6 +61,24 @@ const servicesData = [
     longDescription: 'Evaluación, diagnóstico y tratamiento de trastornos psicológicos con enfoque científico.',
     icon: Shield,
     color: 'from-indigo-500 to-purple-500'
+  },
+  {
+    id: 7,
+    title: 'Preespecializaciones',
+    description: 'Formación avanzada en psicología',
+    longDescription: 'Programas de preespecialización en áreas clínicas y aplicadas. Profundiza en tu área de interés con docentes especializados.',
+    icon: BookOpen,
+    color: 'from-cyan-500 to-blue-500',
+    type: 'prespecialization'
+  },
+  {
+    id: 8,
+    title: 'Cámara Gesell',
+    description: 'Observación y evaluación controlada',
+    longDescription: 'Espacios de observación y evaluación controlada. Ideal para investigación, capacitación y diagnóstico con máxima confidencialidad.',
+    icon: Video,
+    color: 'from-teal-500 to-green-500',
+    type: 'gesell'
   }
 ]
 
@@ -83,7 +104,7 @@ const Services = () => {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Nuestros <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Servicios</span>
+            Nuestros <span className="text-secondary">Servicios</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Estamos para ayudarte a encontrar un camino a seguir, adaptándonos a tus necesidades individuales
