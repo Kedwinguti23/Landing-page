@@ -41,7 +41,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-primary" />
-                <span>info@thinkupsicologia.com</span>
+                <span>admisiones@univo.edu.sv</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -87,7 +87,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-gray-800 text-center text-sm">
-          <p>&copy; {currentYear} Think U Psicología. Todos los derechos reservados.</p>
+          <p>Universidad de Oriente &copy; {currentYear} | All Rights Reserved..</p>
         </div>
       </div>
     </footer>
