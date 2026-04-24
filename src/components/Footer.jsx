@@ -77,7 +77,7 @@ const Footer = () => {
               </motion.a>
             </div>
             <div className="mt-6">
-              <p className="text-sm font-semibold text-white mb-2">Primera consulta gratuita</p>
+              <p className="text-sm font-semibold text-white mb-2">¿Agendar una sesion?</p>
               <button className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg text-sm transition-colors w-full">
                 Reservar cita
               </button>
@@ -87,7 +87,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="pt-8 border-t border-gray-800 text-center text-sm">
-          <p>Universidad de Oriente &copy; {currentYear} | All Rights Reserved..</p>
+          <p>Universidad de Oriente &copy; {currentYear} | All Rights Reserved.</p>
         </div>
       </div>
     </footer>
