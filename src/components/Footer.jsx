@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Brain className="w-8 h-8 text-primary" />
-              <span className="text-xl font-bold text-white">Think U</span>
+              <span className="text-xl font-bold text-white">Bienestar UNIVO</span>
             </div>
             <p className="text-sm leading-relaxed">
               Te ayudamos a encontrar respuestas y un camino a seguir para tu bienestar emocional.
