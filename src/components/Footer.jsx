@@ -1,5 +1,5 @@
 import React from 'react'
-import { Brain, Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
+import { Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
 import { motion } from 'framer-motion'    
 
 const Footer = () => {

@@ -11,7 +11,6 @@ import {
   Shield,
   BookOpen,
   Video,
-  Award
 } from 'lucide-react'
 
 const servicesData = [
