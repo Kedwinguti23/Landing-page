@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import ServiceCard from './ServiceCard'
+import ImageCarousel from './ImageCarousel'
 import {
   Brain,
   Heart,
@@ -96,6 +97,11 @@ const Services = () => {
   return (
     <section id="servicios" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto max-w-6xl">
+
+       {/* Image Carousel */}
+        <ImageCarousel />
+
+
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
