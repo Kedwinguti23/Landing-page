@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X,} from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import univoLogo from '../assets/univo.png'
 import Button from './Button'
 
 const Navbar = () => {
@@ -37,7 +38,7 @@ const Navbar = () => {
             className="flex items-center gap-2"
           >
             <img
-              src="/src/assets/univo.png"
+               src={univoLogo}
               alt="Logo UNIVO"
               className="w-8 h-8 object-contain"
             />

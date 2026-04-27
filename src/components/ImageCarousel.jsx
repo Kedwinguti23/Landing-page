@@ -1,32 +1,36 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import img1 from '../assets/camara-gesell.jpeg'
+import img2 from '../assets/camara-gesell-2.jpeg'
+import img3 from '../assets/camara-gesell-4.jpeg'
+import img4 from '../assets/camara-gesell-5.jpeg'
 
 const carouselSlides = [
   {
     id: 1,
-    image: '/src/assets/camara gesell.jpeg',
+    image: img1,
     label: 'Cámara de Gesell',
     caption: 'Espacio de observación unidireccional para evaluación clínica con total confidencialidad',
     tag: 'Observación'
   },
   {
     id: 2,
-    image: '/src/assets/camara-gesell-2.jpeg',
+    image: img2,
     label: 'Práctica Supervisada',
     caption: 'Estudiantes de psicología desarrollan habilidades clínicas bajo la guía de docentes especializados',
     tag: 'Formación'
   },
   {
     id: 3,
-    image: '/src/assets/camara-gesell-4.jpeg',
+    image: img3,
     label: 'Registro de Sesiones',
     caption: 'Documentación y análisis de sesiones terapéuticas para el aprendizaje progresivo',
     tag: 'Análisis'
   },
   {
     id: 4,
-    image: '/src/assets/camara-gesell-5.jpeg',
+    image: img4,
     label: 'Enfoque Científico',
     caption: 'Metodología basada en evidencia para la evaluación, diagnóstico e intervención psicológica',
     tag: 'Investigación'

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Phone, Mail, MapPin, Instagram, Facebook, Twitter } from 'lucide-react'
 import { motion } from 'framer-motion'    
+import univoLogo from '../assets/univo.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -13,7 +14,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img
-                src="/src/assets/univo.png"
+                 src={univoLogo}
                 alt="Logo UNIVO"
                 className="w-8 h-8 object-contain"
               />

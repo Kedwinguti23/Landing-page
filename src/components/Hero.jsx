@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Sparkles, Eye, ClipboardList } from 'lucide-react'
+import fondoHero from '../assets/universidad-fondo.jpg'
 import Button from './Button'
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
       id="inicio"
       className="relative pt-28 pb-14 px-4 md:pt-32 md:pb-20 overflow-hidden bg-cover bg-center"
       style={{
-        backgroundImage: "url('/img/universidad-fondo.jpg')"
+          backgroundImage: `url(${fondoHero})`
       }}
     >
       {/* Overlay oscuro */}
@@ -37,7 +38,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-accent bg-clip-text text-transparent"
+            className="text-4xl sm:text-5xl md:text-7xl leading-tight font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-accent bg-clip-text text-transparent"
           >
             Aprende, observa y comprende el comportamiento humano
           </motion.h1>
