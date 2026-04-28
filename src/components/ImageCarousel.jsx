@@ -76,7 +76,7 @@ const ImageCarousel = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="mt-8 mb-10"
+      className="mt-0 mb-10"
     >
       {/* Header */}
       <div className="text-center mb-8">

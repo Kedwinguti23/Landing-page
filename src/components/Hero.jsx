@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative pt-28 pb-14 px-4 md:pt-32 md:pb-20 overflow-hidden bg-cover bg-center"
+      className="relative min-h-[calc(100vh-64px)] pt-28 pb-14 px-4 md:pt-32 md:pb-20 overflow-hidden bg-cover bg-center flex items-center"
       style={{
         backgroundImage: "url('/img/universidad-fondo.jpg')"
       }}
