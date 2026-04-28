@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Menu, X, Brain } from 'lucide-react'
+import { Menu, X,} from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Button from './Button'
 
@@ -36,9 +36,14 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-2"
           >
-            <Brain className="w-8 h-8 text-primary" />
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Think U
+            <img
+              src="/src/assets/univo.png"
+              alt="Logo UNIVO"
+              className="w-8 h-8 object-contain"
+            />
+
+            <span className="text-xl font-bold text-primary">
+              UNIVO
             </span>
           </motion.div>
 
