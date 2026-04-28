@@ -28,7 +28,7 @@ const Hero = () => {
           >
             <Sparkles className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-white">
-              Cámara de Gesell · Psicología
+             Facultad de Humanidades · Psicología
             </span>
           </motion.div>
 
@@ -49,7 +49,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-200 max-w-2xl mx-auto mb-10"
           >
-            Una plataforma diseñada para el uso de la cámara de Gesell en la formación de estudiantes de psicología.
+            Una plataforma diseñada para dar conocer los servicios ofrecidos
+            por la facultad de humanidades en la formación de estudiantes de psicología.
           </motion.p>
 
           {/* CTA Button */}
