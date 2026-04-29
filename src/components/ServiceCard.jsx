@@ -26,7 +26,9 @@ const ServiceCard = ({ title, description, longDescription, icon: Icon, color, i
         className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow"
       >
         <div className="p-6 pb-4">
-          <div className={`w-14 h-14 rounded-xl bg-gradient-to-r ${color} flex items-center justify-center mb-4`}>
+          <div
+            className={`w-14 h-14 rounded-xl bg-gradient-to-r ${color} flex items-center justify-center mb-4`}
+          >
             <Icon className="w-7 h-7 text-white" />
           </div>
           <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -44,14 +46,16 @@ const ServiceCard = ({ title, description, longDescription, icon: Icon, color, i
             <ChevronDown className="w-4 h-4" />
           </motion.button>
 
-          <motion.span
-            whileHover={{ x: 3, color: '#7c3aed' }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="text-xs text-gray-400 cursor-pointer font-medium"
-          >
-            Reservar →
-          </motion.span>
+          <a href="https://alumnos.univo.edu.sv/public/psychology/appointments" target="_blank" rel="noopener noreferrer">
+            <motion.span
+              whileHover={{ x: 3, color: "#7c3aed" }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              className="text-xs text-gray-400 cursor-pointer font-medium"
+            >
+              Reservar →
+            </motion.span>
+          </a>
         </div>
       </motion.div>
 
@@ -69,13 +73,17 @@ const ServiceCard = ({ title, description, longDescription, icon: Icon, color, i
               initial={{ opacity: 0, scale: 0.92, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.92, y: 20 }}
-              transition={{ duration: 0.25, ease: 'easeOut' }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
               className="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               {image ? (
                 <div className="relative w-full h-52 overflow-hidden">
-                  <img src={image} alt={title} className="w-full h-full object-cover" />
+                  <img
+                    src={image}
+                    alt={title}
+                    className="w-full h-full object-cover"
+                  />
                   <button
                     onClick={() => setIsModalOpen(false)}
                     className="absolute top-3 right-3 p-1.5 rounded-full bg-black/40 text-white hover:bg-black/60 transition-colors"
@@ -102,7 +110,9 @@ const ServiceCard = ({ title, description, longDescription, icon: Icon, color, i
                 )}
 
                 <div className="flex items-center gap-3 mb-4">
-                  <div className={`w-10 h-10 rounded-xl bg-gradient-to-r ${color} flex items-center justify-center flex-shrink-0`}>
+                  <div
+                    className={`w-10 h-10 rounded-xl bg-gradient-to-r ${color} flex items-center justify-center flex-shrink-0`}
+                  >
                     <Icon className="w-5 h-5 text-white" />
                   </div>
                   <h3 className="text-xl font-bold">{title}</h3>
@@ -114,20 +124,22 @@ const ServiceCard = ({ title, description, longDescription, icon: Icon, color, i
                   {longDescription}
                 </p>
 
-                <motion.button
-                  whileHover={{ scale: 1.03 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="w-full bg-primary text-white font-medium py-2.5 rounded-xl hover:opacity-90 transition-opacity"
-                >
-                  Reservar cita
-                </motion.button>
+                <a href="https://alumnos.univo.edu.sv/public/psychology/appointments" target="_blank" rel="noopener noreferrer">
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
+                    className="w-full bg-primary text-white font-medium py-2.5 rounded-xl hover:opacity-90 transition-opacity"
+                  >
+                    Reservar cita
+                  </motion.button>
+                </a>
               </div>
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
     </>
-  )
+  );
 }
 
 export default ServiceCard
