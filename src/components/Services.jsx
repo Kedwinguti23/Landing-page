@@ -147,9 +147,11 @@ const Services = () => {
           <p className="text-gray-600 mb-4">
             Contáctanos y te ayudaremos a encontrar el tratamiento más adecuado para ti
           </p>
-          <button className="text-primary font-semibold hover:text-secondary transition-colors">
-            Consultar ahora →
-          </button>
+          <a href="https://api.whatsapp.com/send/?phone=50378616984&text=Hola+%2AUNIVO%2A.+Necesito+más+información+sobre+UNIVO+https%3A%2F%2Fwww.univo.edu.sv%2F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+            <button className="text-primary font-semibold hover:text-secondary transition-colors">
+              Consultar ahora →
+            </button>
+          </a>
         </motion.div>
       </div>
     </section>

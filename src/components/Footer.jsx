@@ -83,9 +83,12 @@ const Footer = () => {
             </div>
             <div className="mt-6">
               <p className="text-sm font-semibold text-white mb-2">Agendar una sesión</p>
-              <button className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg text-sm transition-colors w-full">
-                Reservar cita
-              </button>
+              
+              <a href="https://alumnos.univo.edu.sv/public/psychology/appointments" target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg text-sm transition-colors w-full">
+                  Reservar cita
+                </button>
+              </a>
             </div>
           </div>
         </div>
