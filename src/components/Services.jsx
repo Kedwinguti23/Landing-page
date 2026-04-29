@@ -99,7 +99,7 @@ const Services = () => {
   }
 
   return (
-    <section id="servicios" className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto max-w-6xl">
         {/* Contenedor del carrusel con margen inferior */}
         <div className="mb-12">
@@ -107,7 +107,8 @@ const Services = () => {
         </div>
 
         {/* Section Header */}
-        <motion.div
+        <div id='servicios'>
+          <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -120,6 +121,7 @@ const Services = () => {
             Estamos para ayudarte a encontrar un camino a seguir, adaptándonos a tus necesidades individuales
           </p>
         </motion.div>
+        </div>
 
         {/* Services Grid */}
         <motion.div

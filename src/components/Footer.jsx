@@ -29,10 +29,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Servicios</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia Adultos</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia Adolescentes</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia Infantil</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia de Parejas</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia Adultos</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia Adolescentes</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia Infantil</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia de Parejas</a></li>
             </ul>
           </div>
 
