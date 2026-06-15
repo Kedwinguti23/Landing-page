@@ -86,9 +86,11 @@ const Hero = () => {
             animate="visible"
             custom={0.3}
           >
-            <Button variant="primary" size="lg">
-              Explorar plataforma
+            <a href="https://camaragesellunivo.onrender.com/login" target="_blank" rel="noopener noreferrer">
+              <Button variant="primary" size="lg">
+              Explorar sistema de gestion Gesell
             </Button>
+            </a>
           </motion.div>
 
           <motion.div
