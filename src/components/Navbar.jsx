@@ -19,7 +19,6 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Inicio', href: '#inicio' },
     { name: 'Servicios', href: '#servicios' },
-    { name: 'Sobre nosotros', href: '#sobre' },
     { name: 'Contacto', href: '#contacto' },
   ]
 
@@ -59,9 +58,11 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="primary" size="sm">
-              Reservar cita
-            </Button>
+            <a href="https://alumnos.univo.edu.sv/public/psychology/appointments" target="_blank" rel="noopener noreferrer">
+              <Button variant="primary" size="sm">
+                Reservar cita
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}

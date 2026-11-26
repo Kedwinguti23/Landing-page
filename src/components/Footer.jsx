@@ -29,10 +29,10 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-semibold mb-4">Servicios</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia Adultos</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia Adolescentes</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia Infantil</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terapia de Parejas</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia Adultos</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia Adolescentes</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia Infantil</a></li>
+              <li><a href="#servicios" className="hover:text-primary transition-colors">Terapia de Parejas</a></li>
             </ul>
           </div>
 
@@ -83,9 +83,12 @@ const Footer = () => {
             </div>
             <div className="mt-6">
               <p className="text-sm font-semibold text-white mb-2">Agendar una sesión</p>
-              <button className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg text-sm transition-colors w-full">
-                Reservar cita
-              </button>
+              
+              <a href="https://alumnos.univo.edu.sv/public/psychology/appointments" target="_blank" rel="noopener noreferrer">
+                <button className="bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg text-sm transition-colors w-full">
+                  Reservar cita
+                </button>
+              </a>
             </div>
           </div>
         </div>
