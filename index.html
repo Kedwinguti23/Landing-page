@@ -1,14 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Think U Psicología</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMILYZ STUDIO | Estudio de cejas y pestañas</title>
+<meta name="description" content="Realza tu belleza natural en EMILYZ STUDIO: extensiones y lifting de pestañas, tinte, laminado y depilación de cejas. Consulta precios y agenda por WhatsApp.">
+<meta name="theme-color" content="#2B1530">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#inicio" aria-label="Emilyz Studio, ir al inicio">
+      <span class="logo-text">EMILYZ STUDIO</span>
+      <span class="logo-monogram" aria-hidden="true"><span class="monogram-e">E</span><span class="monogram-z">Z</span></span>
+    </a>
+    <nav id="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#visitanos">Horarios y ubicación</a></li>
+      </ul>
+    </nav>
+    <a class="btn head-cta" data-wa href="#">Agendar cita</a>
+    <button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <h1>Realza tu belleza natural.</h1>
+        <p>Somos un estudio de cejas y pestañas. Resaltamos tu mirada con servicios personalizados, atención cercana y cuidado en cada detalle. Escríbenos por WhatsApp y reserva tu cita.</p>
+        <div class="actions">
+          <a class="btn" data-wa="Hola, quiero consultar disponibilidad para una cita." href="#">Consultar disponibilidad</a>
+          <a class="btn ghost" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+      <figure class="ph arch"><img src="assets/web/portada.jpg" alt="Interior de Emilyz Studio con el nombre del estudio en la pared y su área de atención" width="4080" height="2296" fetchpriority="high"></figure>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="wrap">
+      <h2>Servicios</h2>
+      <p class="lead">Elige cómo quieres realzar tu mirada. Consulta nuestros precios y escríbenos para encontrar el horario ideal para ti.</p>
+      <div class="service-categories" id="servicesList"></div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="wrap">
+      <h2>Nuestros trabajos</h2>
+      <p class="lead">Resultados reales de nuestras clientas.</p>
+      <div class="gallery">
+        <figure class="ph"><img src="assets/web/pestanas-detalle.jpg" alt="Detalle de extensiones de pestañas realizadas en el estudio" loading="lazy" width="1200" height="1600"></figure>
+        <figure class="ph"><img src="assets/web/cejas-definidas.jpg" alt="Cejas definidas y cuidadas en Emilyz Studio" loading="lazy" width="1200" height="1600"></figure>
+        <figure class="ph"><img src="assets/web/mirada.jpg" alt="Resultado de pestañas que realzan la mirada" loading="lazy" width="1200" height="1600"></figure>
+        <figure class="ph"><img src="assets/web/pestanas-volumen.jpg" alt="Vista de cerca de un trabajo de extensiones de pestañas" loading="lazy" width="1200" height="1600"></figure>
+        <figure class="ph"><img src="assets/web/cejas-pestanas.jpg" alt="Resultado de cejas y pestañas en una clienta del estudio" loading="lazy" width="1200" height="1600"></figure>
+        <figure class="ph"><img src="assets/web/perfil.jpg" alt="Vista de perfil del acabado de cejas y pestañas" loading="lazy" width="1200" height="1600"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="visitanos">
+    <div class="wrap">
+      <h2>Horarios y ubicación</h2>
+      <div class="visit">
+        <div>
+          <span class="status" id="status">Revisando horario…</span>
+          <table><tbody id="hours"></tbody></table>
+          <p><strong>Dirección:</strong>Colonia Rio Grande, Senda 3, Casa 5, San Miguel Centro, San Miguel</p>
+          <p style="margin:.5rem 0 1.5rem">Si no encuentras el local, escríbenos y te enviamos la ubicación.</p>
+          <a class="btn" data-wa="Hola, necesito indicaciones para llegar al estudio." href="#">Pedir indicaciones</a>
+        </div>
+        
+        <iframe class="map" title="Mapa de EMILYZ STUDIO" loading="lazy" src="https://www.google.com/maps?q=EMILYZ+STUDIO&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>¿Tienes una fecha en mente?</h2>
+      <p class="lead">Cuéntanos qué servicio quieres y el día que prefieres. Te respondemos con los horarios libres.</p>
+      <a class="btn" data-wa href="#">Agendar por WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> EMILYZ STUDIO · Estudio de cejas y pestañas</div>
+</footer>
+
+<a class="fab" data-wa href="#" aria-label="Escribir por WhatsApp"><img src="assets/svg/message.svg" alt="" width="24" height="24" aria-hidden="true"> WhatsApp</a>
+
+<script src="js/main.js" defer></script>
+</body>
 </html>
